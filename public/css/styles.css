@@ -1,19 +1,39 @@
-html,
-body {
+html, body {
   height: 100%;
 }
 
 body {
   display: flex;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #f5f5f5;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background-color: #0099DD;
 }
 
 .form-signin {
+  position: relative;
   max-width: 330px;
   padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px white;
+}
+
+.form-signin:hover {
+  box-shadow: 0px 0px 40px white;
+}
+
+.form-signin:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: #0099DD;
+  filter: blur(5px);
 }
 
 .form-signin .form-floating:focus-within {
@@ -21,7 +41,7 @@ body {
 }
 
 .fw-normal{
-  font-size:x-large;
+  font-size: x-large;
 }
 
 .top{
